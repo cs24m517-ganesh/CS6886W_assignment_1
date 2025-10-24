@@ -11,6 +11,11 @@ If not present, the dataset will be downloaded automatically to `./data/` on fir
 ### How to Install depedency
 pip install -r requirements.txt
 
+### Login to wandb
+As we uses Weights & Biases (W&B), need to login wandb
+
+wandb login
+
 ### How to Train Model
 python main_train.py \
   --activation gelu \
@@ -25,8 +30,10 @@ python main_train.py \
 
 ### How to Evaluate Model
 python main_eval.py
+
 python main_eval.py --checkpoint ./checkpoints/best_val_87.19.pth 
 
 ### How to Train Model
 python main_test.py
+
 python main_test.py --checkpoint ./checkpoints/best_val_87.19.pth 
